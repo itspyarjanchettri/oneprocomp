@@ -3,13 +3,13 @@ export const Hero = () => {
     <div
       className="h-screen flex justify-center items-center"
       style={{
-        backgroundImage: `url('src/images/istockphoto-1145145896-612x612.jpg')`,
+        backgroundImage: `url('src/images/photo-1636955840493-f43a02bfa064.jpeg')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
       <div>
-        <h1 className="text-center text-2xl font-bold mb-2 text-green-500">
+        <h1 className="text-center text-2xl font-bold mb-2 text-midnight">
           Capture, Organize, and Grow Your Ideas
         </h1>
         <p className="w-2xl text-center">

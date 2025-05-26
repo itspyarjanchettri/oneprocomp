@@ -1,15 +1,15 @@
 import {
-  Avatar,
+  // Avatar,
   Button,
-  Dropdown,
-  DropdownDivider,
-  DropdownHeader,
-  DropdownItem,
+  // Dropdown,
+  // DropdownDivider,
+  // DropdownHeader,
+  // DropdownItem,
   Navbar,
   NavbarBrand,
   NavbarCollapse,
   NavbarLink,
-  NavbarToggle,
+  // NavbarToggle,
 } from "flowbite-react";
 const customNavbarTheme = {
   root: {
@@ -61,7 +61,7 @@ const customNavbarTheme = {
 
 export function NavbarComponent() {
   return (
-    <Navbar fluid theme={customNavbarTheme}>
+    <Navbar className="dark:bg-tahiti" fluid theme={customNavbarTheme}>
       <NavbarBrand href="https://flowbite-react.com">
         {/* <img src="/favicon.svg" className="mr-3 h-6 sm:h-9" alt="Flowbite React Logo" /> */}
         <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
@@ -77,7 +77,7 @@ export function NavbarComponent() {
         <NavbarLink href="#">Pricing</NavbarLink>
         <NavbarLink href="#">Contact</NavbarLink>
       </NavbarCollapse>
-      <Button color="green">Create</Button>
+      <Button className="dark:bg-green">Create</Button>
     </Navbar>
   );
 }
