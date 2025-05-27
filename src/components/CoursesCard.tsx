@@ -19,9 +19,11 @@ export const CoursesCard = () => {
               className="h-[250px] w-full  rounded-t-3xl object-cover"
             />
 
-          <div>
-            <p className="absolute top-0 px-[12px] py-[8px] font-medium text-[16px] m-5 rounded-xl bg-black text-white">Photography</p>
-          </div>
+            <div>
+              <p className="absolute top-0 px-[12px] py-[8px] font-medium text-[16px] m-5 rounded-xl bg-black text-white">
+                Photography
+              </p>
+            </div>
 
             <div className="p-5 space-y-3">
               <h1>
@@ -43,16 +45,17 @@ export const CoursesCard = () => {
                   156 Students
                 </p>
               </div>
-              <div className="flex mt-auto items-center border-t pt-3 border-borderColor bottom-14 justify-between text-[18px]">
+              <div className="absolute w-[23rem] bottom-5">
+                <div className="flex mt-auto items-center border-t pt-3  border-borderColor justify-between text-[18px]">
                 <div
                   style={{ fontFamily: "Jost", fontWeight: "400" }}
                   className="flex gap-2 items-center"
                 >
                   <s className="text-gray-400 font-light ">{item.price}</s>
                   <p
-                  style={{fontWeight: 500}}
+                    style={{ fontWeight: 500 }}
                     className={
-                      isNaN(Number(item.disPrice.replace(/\$/g, '')))
+                      isNaN(Number(item.disPrice.replace(/\$/g, "")))
                         ? `text-customgreen`
                         : ` text-customred `
                     }
@@ -61,6 +64,7 @@ export const CoursesCard = () => {
                   </p>
                 </div>
                 <p className=" font-medium hover:text-textorange">View More</p>
+              </div>
               </div>
             </div>
           </div>
