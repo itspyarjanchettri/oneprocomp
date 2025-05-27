@@ -8,7 +8,7 @@ export const Hero = () => {
         backgroundPosition: "center",
       }}
     >
-      <div>
+      <div className="font-poppins">
         <h1 className="text-center text-2xl font-bold mb-2 text-midnight">
           Capture, Organize, and Grow Your Ideas
         </h1>

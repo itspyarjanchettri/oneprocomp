@@ -1,6 +1,7 @@
 
 import './App.css'
-import { Hero } from './components/hero'
+import { CoursesCard } from './components/CoursesCard'
+// import { Hero } from './components/hero'
 import { NavbarComponent } from './components/navbar'
 
 
@@ -11,7 +12,9 @@ function App() {
     <>
       <div  className="">
         <NavbarComponent/> {/*navbar*/} 
-        <Hero/>
+        {/* <Hero/> */}
+        {/* <CardComponent/> card */}
+        <CoursesCard/>
       </div>
     </>
   )

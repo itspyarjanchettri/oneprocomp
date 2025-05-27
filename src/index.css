@@ -3,8 +3,23 @@
 @source "../.flowbite-react/class-list.json";
 
 @theme {
+  /* --font-sans: 'Inter', sans-serif; */
+  /* --font-poppins: 'Roboto', sans-serif; */
+  --font-Exo: 'Exo', sans-serif
   --color-midnight: #B0DB9C;
   --color-tahiti: #CAE8BD ;
-  --color-green: #A0C878;
+  --color-green: #427b09;
   /* --color-bermuda: #78dcca; */
-} 
+
+  /* card color  */
+  --color-cardbg: #ffffff;
+  --color-textBlack: #000000;
+  --color-textorange: #FF782d;
+  --color-borderColor: #eaeaea;
+  --color-customred: #F51A1A;
+  --color-customgreen: #55BE24;
+}  
+
+body{
+  font-family: 'Jost';
+}
