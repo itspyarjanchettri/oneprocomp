@@ -11,13 +11,18 @@ export const CoursesCard = () => {
         {cardData.map((item, index) => (
           <div
             key={index}
-            className="w-[410px] group h-[474px] transition-transform duration-300 hover:-translate-y-5 hover:shadow-xl rounded-3xl border border-borderColor bg-cardbg flex flex-col"
+            className="w-[410px] relative group h-[474px] transition-transform duration-300 hover:-translate-y-5 hover:shadow-xl rounded-3xl border border-borderColor bg-cardbg flex flex-col"
           >
             <img
               src={item.imgSrc}
               alt={item.title}
-              className="h-[250px] w-full rounded-t-3xl object-cover"
+              className="h-[250px] w-full  rounded-t-3xl object-cover"
             />
+
+          <div>
+            <p className="absolute top-0 px-[12px] py-[8px] font-medium text-[16px] m-5 rounded-xl bg-black text-white">Photography</p>
+          </div>
+
             <div className="p-5 space-y-3">
               <h1>
                 <span className="text-sm font-normal text-[#555555]">by</span>
@@ -45,6 +50,7 @@ export const CoursesCard = () => {
                 >
                   <s className="text-gray-400 font-light ">{item.price}</s>
                   <p
+                  style={{fontWeight: 500}}
                     className={
                       isNaN(Number(item.disPrice.replace(/\$/g, '')))
                         ? `text-customgreen`
